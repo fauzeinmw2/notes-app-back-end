@@ -32,7 +32,7 @@ const addNoteHandler = (Request, h) => {
 };
 
 const getAllNotesHandler = () => ({
-    status: 'succes',
+    status: 'success',
     data: {
         notes,
     }
@@ -58,7 +58,7 @@ const getNoteByIdHandler = (request, h) => {
     });
 
     response.code(404);
-    return repsonse;
+    return response;
 };
 
 const editNoteByIdHandler = (request, h) => {
